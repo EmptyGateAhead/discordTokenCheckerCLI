@@ -52,6 +52,11 @@ The information we can get from discord with just a token is the following:
 - Nitro status
 - Flags (staff , verified, etc...)
 
-## DISCLAIMER
+## Bugs:
+
+please report all bugs to my email `definitleyreal@courvix.com`
+i am aware of a few bugs, they will be ironed out in the next update
+
+## LEGAL DISCLAIMER:
 
 THIS PROGRAM IS ONLY ALLOWED FOR LEGAL USE, ANY USAGE WHICH CAN BE CONSIDERED ILLEGAL IS FORBIDDEN BY THE CREATOR AND THEY ARE NOT RESPONSIBLE FOR ANY DAMAGE THAT MAY OCCUR; THIS MAY INCLUDE USING STOLEN TOKENS WHICH IS ALSO FOBIDDEN 
