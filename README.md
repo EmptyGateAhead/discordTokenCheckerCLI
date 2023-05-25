@@ -44,6 +44,7 @@ The information we can get from discord with just a token is the following:
 - bio
 
 ## Planned Features:
+- Server
 - DM Count
 - Last Activitiy 
 - Account creation date
