@@ -20,7 +20,7 @@ Format should be 1 token per line, e.g:
 
 Use argument `-o` or `--output` to specifiy your output file(required, output is .csv format)
 
-Example usage: `python3 discordTokenChecker.py --input input.txt --output.txt
+Example usage: `python3 discordTokenChecker.py --input input.txt --output.txt`
 
 The information we can get from discord with just a token is the following: 
 
