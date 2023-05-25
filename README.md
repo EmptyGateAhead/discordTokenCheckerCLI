@@ -1,5 +1,5 @@
 # Dicord Token Checker cli
----
+
 Simple script made in python to check discord tokens for account data(total of 20 data points)
 
 Unlike other programs there are no 3rd party dependencies required; just python3 and a working internet connection
