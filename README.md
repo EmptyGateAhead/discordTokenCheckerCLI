@@ -2,7 +2,7 @@
 
 ![Example Output](output.png)
 
-Simple script made in python to check discord tokens for account data(total of 20 data points)
+Simple script made in python to check discord tokens for account data(total of 10 data points)
 
 Unlike other programs there are no 3rd party dependencies required; just python3 and a working internet connection
 ## Install 
@@ -26,23 +26,15 @@ Example usage: `python3 discordTokenChecker.py --input input.txt --output.txt`
 
 The information we can get from discord with just a token is the following: 
 
+- token
+- username
+- nickname
+- email
+- emailVerified
+- phone
+- locale
+- nsfw
+- linkedAccounts
+- mfaStatus
 - ID
-- Username
-- Discriminator
-- Global Name
-- Flags
-- Bio
-- Locale
-- Nsfw Status
-- Bio
-- Locale
-- Mfa Status 
-- Nitro Status
-- Linked accounts
-- Email 
-- Email Verification Status
-- Phone Number
-- DM count
-- Friends Count
-- Last Activity
-- Account creation date
+- bio
