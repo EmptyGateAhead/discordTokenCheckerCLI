@@ -1,7 +1,7 @@
 ## LEGAL DISCLAIMER:
 THIS PROGRAM IS ONLY ALLOWED FOR LEGAL USE, ANY USAGE WHICH CAN BE CONSIDERED ILLEGAL IS FORBIDDEN BY THE CREATOR AND THEY ARE NOT RESPONSIBLE FOR ANY DAMAGE THAT MAY OCCUR; THIS MAY INCLUDE USING STOLEN TOKENS WHICH IS FOBIDDEN
 
-# Dicord Token Checker cli V1.2.0
+# Dicord Token Checker cli V1.2.0 ![GitHub all releases](https://img.shields.io/github/downloads/EmptyGateAhead/discordTokenCheckerCLI/total)
 ![Example CLI Output](cli.png)
 ![Example CSV Data](csv.png)
 
