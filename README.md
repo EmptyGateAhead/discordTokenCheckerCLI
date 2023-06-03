@@ -1,32 +1,36 @@
-## LEGAL DISCLAIMER:
+### LEGAL DISCLAIMER:
 THIS PROGRAM IS ONLY ALLOWED FOR LEGAL USE, ANY USAGE WHICH CAN BE CONSIDERED ILLEGAL IS FORBIDDEN BY THE CREATOR AND THEY ARE NOT RESPONSIBLE FOR ANY DAMAGE THAT MAY OCCUR; THIS MAY INCLUDE USING STOLEN TOKENS WHICH IS FOBIDDEN
 
 # Dicord Token Checker cli V1.2.0 ![GitHub all releases](https://img.shields.io/github/downloads/EmptyGateAhead/discordTokenCheckerCLI/total)
-![Example CLI Output](cli.png)
-![Example CSV Data](csv.png)
+![Example CLI Output](pic/cli.png)
 
-Simple script made in python to check discord tokens for account data(total of 10 data points) and write it in csv format
+Simple script made in python to check discord tokens for account data(total of 21 data points) and write it in csv format
 
-Unlike other programs there are no 3rd party dependencies required; just python3 and a working internet connection
+Unlike other programs there are no 3rd party dependencies required; just python3 a working internet connection and something to view csv data(libre office is recommended)
 
 ## Checksums:
-This is the checksum for `main.py`
 
-These will be updated with every release
+└MD5: ``
 
-MD5: `199dd15cac53d61114adc4639c000b2a`
+└SHA1: ``
 
-SHA1: `8a1652536b2b8d601127d4ff28a35a9b60847636`
-
-SHA256: `f9861e06385feed2bd5474d5b5311d2caf04a82cab4701883d52ba927f23e929`
+└SHA256: ``
 
 ## Install:
-Download `main.py`
+Download `main.py` from [releases](https://github.com/EmptyGateAhead/discordTokenCheckerCLI/releases)
 
-## Usage:
-Example usage `python3 main.py --input input.txt --output.txt`
+## Arguments:
+Syntax E.G: `python3 main.py --input 600tokens --split : 2 --output output.csv  --avatars avatars/run1 --saveErrorTokens error.txt -v`
 
-Use argument `-i` or `--input` to specifiy your input file(required)
+This can be shortened to: `python3 main.py -i 600tokens -s : 2 -o output.csv -a avatars/run2 -se error.txt -v`
+
+For normal operation you do not need to use all of the above arguments
+
+using just the required arguments: `python3 main.py -i 600tokens -o output.csv`
+
+### Input:
+
+`-i` or `--input` specifies your input file(required)
 
 Format should be 1 token per line, e.g:
 
@@ -37,50 +41,95 @@ Format should be 1 token per line, e.g:
 - token4
 - token5
 
-Use argument `-o` or `--output` to specifiy your output file(required, output is .csv format)
+### Output:
 
-The information we can get from discord with just a token is the following:
+`-o` or `--output` specifies your output file(required, output is csv format)
+
+Columns:
+
+token,username,nickname,email,email verified,phone,locale,nsfw,linked accounts,mfa status,ID,bio,creation date,user flags,nitro status,server count,dm count,friend count,card count,payment info,avatar URL
+
+![Example CSV Data](pic/csv.png)
+
+### Split:
+
+If you have a file with a different layout you can use `--split`(optional)
+
+- mail:pass:token0
+- mail:pass:token1
+- mail:pass:token2
+- mail:pass:token3
+- mail:pass:token4
+- mail:pass:token5
+
+For a file with a layout like the one above you would use `--split : 2` or `-s : 2`
+
+this specifies to split the line at the : character and then 2 specifies the tokens position
+
+### Avatar:
+
+`-a` or `--avatar` saves the users avatars locally(optional)
+
+Specify the directory to save the avatars to, if the directory does not exist then the program will automatically create one
+
+### Invalid/Locked tokens:
+
+`-se` or `--saveErrorTokens` can be used to save invalid and locked tokens to a seperate file
+
+### Verbose
+
+`-v` or `--verbose` will output more information when the program is running
+
+![Verbose Output](pic/verbose.png)
+
+## CSV configurations:
+
+due to the fact some users bio's may have characters like semicolons and other characters that mess with the layout
+
+it is important to set it up to only seperate columns on the comma character, i recommend using libre office as that is what i am using.
+
+![CSV Import option](pic/csvOptions.png)
+
+Its also recommended to set the ID column as text
+
+![Set ID colum as text](pic/idColumns.png)
+
+## Data:
+The information we can get from a valid discord token:
 
 - token (string)
 - username (string)
 - discriminator (string)
 - nickname (string)
 - email (string)
-- email verified (bool)
+- email verified (boolean)
 - phone (string)
 - locale (string)
-- nsfw (bool)
+- nsfw (boolean)
 - linked accounts (array)
-- mfa status (bool)
-- ID (int)
+- mfa status (boolean)
+- ID (interger)
 - bio (string)
 - creation date (string)
 - user flags (string)
 - nitro status (string)
-- server count (int)
-- dm count (int)
-- friend count (int)
-- payment data (bool)
+- server count (interger)
+- dm count (interger)
+- friend count (interger)
+- payment data(array)
+- avatar URL(string)
 
-## V2.0.0 UPDATE!
-The second minor release is here with some new features:
-- Efficiency upgrades
-- Colours
-- Clearing output
-- Bug fixes
-- Creation Date
-- Server Count
-- DM Count
-- Friend Count
-- Payment Data
+## V3.0.0 UPDATE!
+- Detailed payment data
+- Verbose argument
+- Avatars
+- Split position and characters
 
 ## Planned Features:
-- Payment Information
-- Save Avatars
-- bug fixes
+I will maybe in the future add some more optimizations, for now i will be working on other projects on my github.
 
 ## Bugs:
-please report all bugs you find, i will append the github accounts of everyone who finds bug's or makes improvements.
+please report all bugs you find, i will append the github accounts of anyone who finds bug's or makes improvements.
 
 ## Hall of bug hunters:
 - EmptyGateAhead
