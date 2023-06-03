@@ -10,11 +10,11 @@ Unlike other programs there are no 3rd party dependencies required; just python3
 
 ## Checksums:
 
-└MD5: ``
+└MD5: `def7e1c83e49a92941c420f1ea512006`
 
-└SHA1: ``
+└SHA1: `88ddfe4f16300264086460f00a273b7e5d7f7bfc`
 
-└SHA256: ``
+└SHA256: `f7ecffe24cc0175adeef2fb7cf70c0390d0cfe498e79461dbcfd65daa43412c2`
 
 ## Install:
 Download `main.py` from [releases](https://github.com/EmptyGateAhead/discordTokenCheckerCLI/releases)
