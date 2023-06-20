@@ -126,7 +126,8 @@ The information we can get from a valid discord token:
 - Split position and characters
 
 ## Planned Features:
-I will maybe in the future add some more optimizations, for now i will be working on other projects on my github.
+after some thinking i will be ditching any http client and instead i will be re writing this to use pure sockets instead.
+the speed improvements will be much better and the code will be more efficient
 
 ## Bugs:
 please report all bugs you find, i will append the github accounts of anyone who finds bug's or makes improvements.
