@@ -1,7 +1,7 @@
 ### LEGAL DISCLAIMER:
 THIS PROGRAM IS ONLY ALLOWED FOR LEGAL USE, ANY USAGE WHICH CAN BE CONSIDERED ILLEGAL IS FORBIDDEN BY THE CREATOR AND THEY ARE NOT RESPONSIBLE FOR ANY DAMAGE THAT MAY OCCUR; THIS MAY INCLUDE USING STOLEN TOKENS WHICH IS FOBIDDEN
 
-# Dicord Token Checker cli V3.0.0 ![GitHub all releases](https://img.shields.io/github/downloads/EmptyGateAhead/discordTokenCheckerCLI/total)
+# Dicord Token Checker cli V3.1.0 ![GitHub all releases](https://img.shields.io/github/downloads/EmptyGateAhead/discordTokenCheckerCLI/total)
 ![Example CLI Output](pic/cli.png)
 
 Simple script made in python to check discord tokens for account data(total of 21 data points) and write it in csv format
@@ -119,15 +119,12 @@ The information we can get from a valid discord token:
 - payment data(array)
 - avatar URL(string)
 
-## V3.0.0 UPDATE!
+## V3.1.0 UPDATE!
+- after much testing i am proud to annouce a Major performance increase, what took 5 minutes before now only takes 20 seconds. 
 - Detailed payment data
 - Verbose argument
 - Avatars
 - Split position and characters
-
-## Planned Features:
-after some thinking i will be ditching any http client and instead i will be re writing this to use pure sockets instead.
-the speed improvements will be much better and the code will be more efficient
 
 ## Bugs:
 please report all bugs you find, i will append the github accounts of anyone who finds bug's or makes improvements.
